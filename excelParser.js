@@ -17,7 +17,7 @@ function extractFiles(path, sheet) {
 		},
 		'xl/sharedStrings.xml': 'strings'	
 	};
-	files['xl/worksheets/sheet' + sheet + '.xml'] = 'sheet';
+	files['xl/worksheets/' + sheet + '.xml'] = 'sheet';
 	var noop = function () {};
 	
 	var srcStream = path instanceof require('stream') ?
